@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Arreglo: Fichero Fuente arreglo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Arreglo
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Manejo estadístico de datos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Amigas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">arreglo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="arreglo_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// License LGPL: https://www.gnu.org/licenses/lgpl.html</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifndef ARREGLO_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define ARREGLO_H</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="funciones_8h.html">funciones.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_mayor.html">   34</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keyword">struct </span><a class="code" href="struct_mayor.html">Mayor</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Estructura plantilla Mayor</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_mayor.html#a7a5ca10e707addde5120f3b911ad2a61">   36</a></span>&#160;    Tipo <a class="code" href="struct_mayor.html#a7a5ca10e707addde5120f3b911ad2a61">valor</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_mayor.html#a03ebe0187d8f1afc8a38ae9343b17e7b">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_mayor.html#a03ebe0187d8f1afc8a38ae9343b17e7b">ocurrencias</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_moda.html">   43</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keyword">struct </span><a class="code" href="struct_moda.html">Moda</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Estructura plantilla Moda</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_moda.html#a5b1e37f7ab23196b577cfd4401717a7c">   45</a></span>&#160;    Tipo <a class="code" href="struct_moda.html#a5b1e37f7ab23196b577cfd4401717a7c">valor</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_moda.html#ac79b25a802593339293054d788beef70">   46</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="struct_moda.html#ac79b25a802593339293054d788beef70">hay_moda</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_moda.html#af99f5922d046cc137af7844f7e29c605">   48</a></span>&#160;    <a class="code" href="struct_moda.html#af99f5922d046cc137af7844f7e29c605">Moda</a>(<span class="keyword">const</span> <a class="code" href="struct_mayor.html">Mayor&lt;Tipo&gt;</a> &amp;ma) : <a class="code" href="struct_moda.html#a5b1e37f7ab23196b577cfd4401717a7c">valor</a>(ma.<a class="code" href="struct_moda.html#a5b1e37f7ab23196b577cfd4401717a7c">valor</a>), <a class="code" href="struct_moda.html#ac79b25a802593339293054d788beef70">hay_moda</a>(true) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (ma.<a class="code" href="struct_mayor.html#a03ebe0187d8f1afc8a38ae9343b17e7b">ocurrencias</a> == 1) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="struct_moda.html#ac79b25a802593339293054d788beef70">hay_moda</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="arreglo_8h.html#a2d81357b9b85c70b88481b1e4527e37a">   61</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; std::ostream &amp;<a class="code" href="arreglo_8h.html#a2d81357b9b85c70b88481b1e4527e37a">operator&lt;&lt;</a>(std::ostream &amp;o,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_moda.html">Moda&lt;Tipo&gt;</a> &amp;mo)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Hay moda para mostrar</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (mo.<a class="code" href="struct_moda.html#ac79b25a802593339293054d788beef70">hay_moda</a>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> o &lt;&lt; mo.<a class="code" href="struct_moda.html#a5b1e37f7ab23196b577cfd4401717a7c">valor</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> o;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6">   74</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6">Ordenamiento</a> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Enumeración de ordenamiento</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652">   76</a></span>&#160;    <a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652">ASCENDENTE</a>  = 0,</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c">   77</a></span>&#160;    <a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c">DESCENDENTE</a> = 1</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_arreglo.html">   83</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keyword">class </span><a class="code" href="class_arreglo.html">Arreglo</a> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// Clase plantilla Arreglo</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_arreglo.html#a2fbab0dd6c8a922e165711649a6a7640">Arreglo</a>(<span class="keyword">const</span> Tipo *valores, <span class="keywordtype">int</span> tam);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_arreglo.html#a2fbab0dd6c8a922e165711649a6a7640">Arreglo</a>(<span class="keyword">const</span> <a class="code" href="class_arreglo.html">Arreglo</a> &amp;otro);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_arreglo.html#a1f22e8ac100a6dcc3e18f7850bde7b0a">  102</a></span>&#160;    <a class="code" href="class_arreglo.html#a1f22e8ac100a6dcc3e18f7850bde7b0a">~Arreglo</a>() {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">delete</span>[] _valores;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_arreglo.html#af0c10fb618ed6fa638d2e6a2a64338d3">media</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Tipo <a class="code" href="class_arreglo.html#a777e1253e17c4d24ad1f4046d2c4529d">mediana</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="struct_moda.html">Moda&lt;Tipo&gt;</a> <a class="code" href="class_arreglo.html#ab4200820b4bb09988a50b82d0f95250f">moda</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_arreglo.html#ac1e8f3ecec261c1829257e144d67e4f7">ordena</a>(<a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6">Ordenamiento</a> ord = <a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652">ASCENDENTE</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt; <span class="keyword">friend</span> std::ostream &amp;<a class="code" href="class_arreglo.html#adb4a65563738571a30f77e46a3427138">operator&lt;&lt;</a>(std::ostream &amp;o,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_arreglo.html">Arreglo&lt;Type&gt;</a> &amp;A);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    Tipo *_valores;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">int</span> _tam;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> copia(std::vector&lt;Tipo&gt; &amp;v) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> asigna(<span class="keyword">const</span> std::vector&lt;Tipo&gt; &amp;v);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;};</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_arreglo.html#a2fbab0dd6c8a922e165711649a6a7640">  146</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <a class="code" href="class_arreglo.html#a2fbab0dd6c8a922e165711649a6a7640">Arreglo&lt;Tipo&gt;::Arreglo</a>(<span class="keyword">const</span> Tipo *valores, <span class="keywordtype">int</span> tam)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    : _valores(new Tipo[tam])</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    , _tam(tam)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// Copia valores</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; tam; ++i) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        _valores[i] = valores[i];</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_arreglo.html#a7917d5870c310e1ccabe456fd82b445a">  156</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <a class="code" href="class_arreglo.html#a2fbab0dd6c8a922e165711649a6a7640">Arreglo&lt;Tipo&gt;::Arreglo</a>(<span class="keyword">const</span> <a class="code" href="class_arreglo.html">Arreglo</a> &amp;otro)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    : _valores(new Tipo[otro._tam])</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    , _tam(otro._tam)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">// Copia valores</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _tam; ++i) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        _valores[i] = otro._valores[i];</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="class_arreglo.html#af0c10fb618ed6fa638d2e6a2a64338d3">  166</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keywordtype">double</span> <a class="code" href="class_arreglo.html#af0c10fb618ed6fa638d2e6a2a64338d3">Arreglo&lt;Tipo&gt;::media</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Obtiene la media de los valores (promedio)</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">double</span> S = 0; <span class="comment">// Suma</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _tam; ++i) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        S += _valores[i];</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> S / _tam; <span class="comment">// Resultado</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="class_arreglo.html#a777e1253e17c4d24ad1f4046d2c4529d">  175</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; Tipo <a class="code" href="class_arreglo.html#a777e1253e17c4d24ad1f4046d2c4529d">Arreglo&lt;Tipo&gt;::mediana</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">// Obtiene la mediana de los valores (valor intermedio)</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_arreglo.html">Arreglo</a> A(*<span class="keyword">this</span>); <span class="comment">// Copia</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    A.<a class="code" href="class_arreglo.html#ac1e8f3ecec261c1829257e144d67e4f7">ordena</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// Si el tamaño es par:</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="funciones_8cpp.html#a3feadc82e75636170086ce528992aaad">es_par</a>(A._tam)) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> pos1 = A._tam / 2;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> pos2 = pos1 - 1;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> S = A._valores[pos1] + A._valores[pos2];</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> S / 2; <span class="comment">// Resultado</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// Si el tamaño es impar:</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">return</span> A._valores[A._tam / 2]; <span class="comment">// Resultado</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="class_arreglo.html#ab4200820b4bb09988a50b82d0f95250f">  190</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <a class="code" href="struct_moda.html">Moda&lt;Tipo&gt;</a> <a class="code" href="class_arreglo.html#ab4200820b4bb09988a50b82d0f95250f">Arreglo&lt;Tipo&gt;::moda</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Obtiene el valor más frecuente</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    vector&lt;Tipo&gt; valores, clases;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    copia(valores); <span class="comment">// Copia valores</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// Llena clases</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; _tam; ++i) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> cnt = count(clases.begin(), clases.end(), _valores[i]);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">if</span> (cnt == 0) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            clases.push_back(_valores[i]);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// Busca la mayor ocurrencia</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> tamcss = clases.size();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="struct_mayor.html">Mayor&lt;Tipo&gt;</a> ma;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    ma.<a class="code" href="struct_mayor.html#a7a5ca10e707addde5120f3b911ad2a61">valor</a> = clases[0];</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    ma.ocurrencias = count(valores.begin(), valores.end(), clases[0]);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span> (i = 1; i &lt; tamcss; ++i) {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> cnt = count(valores.begin(), valores.end(), clases[i]);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (ma.ocurrencias &lt; cnt) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            ma.ocurrencias = cnt;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            ma.valor = clases[i];</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="struct_moda.html">Moda&lt;Tipo&gt;</a>(ma);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="class_arreglo.html#ac1e8f3ecec261c1829257e144d67e4f7">  218</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keywordtype">void</span> <a class="code" href="class_arreglo.html#ac1e8f3ecec261c1829257e144d67e4f7">Arreglo&lt;Tipo&gt;::ordena</a>(<a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6">Ordenamiento</a> ord) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// Ordena arreglo    </span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    vector&lt;Tipo&gt; valores;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    copia(valores);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    sort(valores.begin(), valores.end(), ord == <a class="code" href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652">ASCENDENTE</a> ? <a class="code" href="funciones_8cpp.html#a0361f14e71fbbd4aadd442a1d89a0a30">menor</a> : <a class="code" href="funciones_8cpp.html#a4a33bfd31c20f6a2efc91e60094b872c">mayor</a>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    asigna(valores);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keywordtype">void</span> <a class="code" href="class_arreglo.html">Arreglo&lt;Tipo&gt;::copia</a>(std::vector&lt;Tipo&gt; &amp;v)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="comment">// Operación contraria de asigna</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> tam = v.size();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">if</span> (tam &lt; _tam) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        v.resize(_tam);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _tam; ++i) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        v[i] = _valores[i];</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tipo&gt; <span class="keywordtype">void</span> <a class="code" href="class_arreglo.html">Arreglo&lt;Tipo&gt;::asigna</a>(<span class="keyword">const</span> std::vector&lt;Tipo&gt; &amp;v) {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// Operación contraria de copia</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; _tam; ++i) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        _valores[i] = v[i];</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="arreglo_8h.html#adb4a65563738571a30f77e46a3427138">  245</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type&gt; std::ostream &amp;<a class="code" href="arreglo_8h.html#a2d81357b9b85c70b88481b1e4527e37a">operator&lt;&lt;</a>(std::ostream &amp;o,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_arreglo.html">Arreglo&lt;Type&gt;</a> &amp;A)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// Muestra arreglos</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    o &lt;&lt; A._valores[0];</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; A._tam; ++i) {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        o &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; A._valores[i];</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">return</span> o;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#endif // ARREGLO_H</span></div>
+<div class="ttc" id="class_arreglo_html_a1f22e8ac100a6dcc3e18f7850bde7b0a"><div class="ttname"><a href="class_arreglo.html#a1f22e8ac100a6dcc3e18f7850bde7b0a">Arreglo::~Arreglo</a></div><div class="ttdeci">~Arreglo()</div><div class="ttdoc">Destructor de la clase Arreglo. </div><div class="ttdef"><b>Definition:</b> arreglo.h:102</div></div>
+<div class="ttc" id="struct_moda_html_ac79b25a802593339293054d788beef70"><div class="ttname"><a href="struct_moda.html#ac79b25a802593339293054d788beef70">Moda::hay_moda</a></div><div class="ttdeci">bool hay_moda</div><div class="ttdef"><b>Definition:</b> arreglo.h:46</div></div>
+<div class="ttc" id="struct_moda_html_a5b1e37f7ab23196b577cfd4401717a7c"><div class="ttname"><a href="struct_moda.html#a5b1e37f7ab23196b577cfd4401717a7c">Moda::valor</a></div><div class="ttdeci">Tipo valor</div><div class="ttdef"><b>Definition:</b> arreglo.h:45</div></div>
+<div class="ttc" id="class_arreglo_html_a2fbab0dd6c8a922e165711649a6a7640"><div class="ttname"><a href="class_arreglo.html#a2fbab0dd6c8a922e165711649a6a7640">Arreglo::Arreglo</a></div><div class="ttdeci">Arreglo(const Tipo *valores, int tam)</div><div class="ttdoc">Constructor de Arreglo. </div><div class="ttdef"><b>Definition:</b> arreglo.h:146</div></div>
+<div class="ttc" id="class_arreglo_html_adb4a65563738571a30f77e46a3427138"><div class="ttname"><a href="class_arreglo.html#adb4a65563738571a30f77e46a3427138">Arreglo::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, const Arreglo&lt; Type &gt; &amp;A)</div><div class="ttdoc">Operador de inserción de la clase Arreglo. </div><div class="ttdef"><b>Definition:</b> arreglo.h:245</div></div>
+<div class="ttc" id="struct_moda_html_af99f5922d046cc137af7844f7e29c605"><div class="ttname"><a href="struct_moda.html#af99f5922d046cc137af7844f7e29c605">Moda::Moda</a></div><div class="ttdeci">Moda(const Mayor&lt; Tipo &gt; &amp;ma)</div><div class="ttdef"><b>Definition:</b> arreglo.h:48</div></div>
+<div class="ttc" id="arreglo_8h_html_a19d29c5392079f801023ed938d9ce2d6"><div class="ttname"><a href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6">Ordenamiento</a></div><div class="ttdeci">Ordenamiento</div><div class="ttdoc">Enumeración para elegir la forma de ordenar el Arreglo. </div><div class="ttdef"><b>Definition:</b> arreglo.h:74</div></div>
+<div class="ttc" id="struct_mayor_html"><div class="ttname"><a href="struct_mayor.html">Mayor</a></div><div class="ttdoc">Estructura auxiliar de la estructura Moda. </div><div class="ttdef"><b>Definition:</b> arreglo.h:34</div></div>
+<div class="ttc" id="class_arreglo_html_ac1e8f3ecec261c1829257e144d67e4f7"><div class="ttname"><a href="class_arreglo.html#ac1e8f3ecec261c1829257e144d67e4f7">Arreglo::ordena</a></div><div class="ttdeci">void ordena(Ordenamiento ord=ASCENDENTE)</div><div class="ttdoc">ordena Ordena el contenido del Arreglo </div><div class="ttdef"><b>Definition:</b> arreglo.h:218</div></div>
+<div class="ttc" id="class_arreglo_html_a777e1253e17c4d24ad1f4046d2c4529d"><div class="ttname"><a href="class_arreglo.html#a777e1253e17c4d24ad1f4046d2c4529d">Arreglo::mediana</a></div><div class="ttdeci">Tipo mediana() const </div><div class="ttdoc">mediana Obtiene el valor intermedio de la serie de valores </div><div class="ttdef"><b>Definition:</b> arreglo.h:175</div></div>
+<div class="ttc" id="class_arreglo_html_ab4200820b4bb09988a50b82d0f95250f"><div class="ttname"><a href="class_arreglo.html#ab4200820b4bb09988a50b82d0f95250f">Arreglo::moda</a></div><div class="ttdeci">Moda&lt; Tipo &gt; moda() const </div><div class="ttdoc">moda Obtiene el valor con mayor número de ocurrencias </div><div class="ttdef"><b>Definition:</b> arreglo.h:190</div></div>
+<div class="ttc" id="funciones_8h_html"><div class="ttname"><a href="funciones_8h.html">funciones.h</a></div><div class="ttdoc">Funciones de utilería. </div></div>
+<div class="ttc" id="funciones_8cpp_html_a0361f14e71fbbd4aadd442a1d89a0a30"><div class="ttname"><a href="funciones_8cpp.html#a0361f14e71fbbd4aadd442a1d89a0a30">menor</a></div><div class="ttdeci">double menor(double a, double b)</div><div class="ttdoc">menor Indica el número menor </div><div class="ttdef"><b>Definition:</b> funciones.cpp:18</div></div>
+<div class="ttc" id="struct_mayor_html_a03ebe0187d8f1afc8a38ae9343b17e7b"><div class="ttname"><a href="struct_mayor.html#a03ebe0187d8f1afc8a38ae9343b17e7b">Mayor::ocurrencias</a></div><div class="ttdeci">int ocurrencias</div><div class="ttdef"><b>Definition:</b> arreglo.h:37</div></div>
+<div class="ttc" id="struct_moda_html"><div class="ttname"><a href="struct_moda.html">Moda</a></div><div class="ttdoc">Estructura auxiliar de la clase Arreglo. </div><div class="ttdef"><b>Definition:</b> arreglo.h:43</div></div>
+<div class="ttc" id="class_arreglo_html_af0c10fb618ed6fa638d2e6a2a64338d3"><div class="ttname"><a href="class_arreglo.html#af0c10fb618ed6fa638d2e6a2a64338d3">Arreglo::media</a></div><div class="ttdeci">double media() const </div><div class="ttdoc">media Obtiene el valor de la media aritmética </div><div class="ttdef"><b>Definition:</b> arreglo.h:166</div></div>
+<div class="ttc" id="arreglo_8h_html_a2d81357b9b85c70b88481b1e4527e37a"><div class="ttname"><a href="arreglo_8h.html#a2d81357b9b85c70b88481b1e4527e37a">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, const Moda&lt; Tipo &gt; &amp;mo)</div><div class="ttdoc">Operador de inserción de la estructura Moda. </div><div class="ttdef"><b>Definition:</b> arreglo.h:61</div></div>
+<div class="ttc" id="arreglo_8h_html_a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c"><div class="ttname"><a href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a5cca894366cc73597a376660bb317f3c">DESCENDENTE</a></div><div class="ttdef"><b>Definition:</b> arreglo.h:77</div></div>
+<div class="ttc" id="arreglo_8h_html_a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652"><div class="ttname"><a href="arreglo_8h.html#a19d29c5392079f801023ed938d9ce2d6a81a8a96faa5cc685dadc157583300652">ASCENDENTE</a></div><div class="ttdef"><b>Definition:</b> arreglo.h:76</div></div>
+<div class="ttc" id="class_arreglo_html"><div class="ttname"><a href="class_arreglo.html">Arreglo</a></div><div class="ttdoc">Clase para almacenar datos y hacer operaciones estadísticas. </div><div class="ttdef"><b>Definition:</b> arreglo.h:83</div></div>
+<div class="ttc" id="funciones_8cpp_html_a3feadc82e75636170086ce528992aaad"><div class="ttname"><a href="funciones_8cpp.html#a3feadc82e75636170086ce528992aaad">es_par</a></div><div class="ttdeci">bool es_par(int numero)</div><div class="ttdoc">es_par Indica si un número es par </div><div class="ttdef"><b>Definition:</b> funciones.cpp:14</div></div>
+<div class="ttc" id="struct_mayor_html_a7a5ca10e707addde5120f3b911ad2a61"><div class="ttname"><a href="struct_mayor.html#a7a5ca10e707addde5120f3b911ad2a61">Mayor::valor</a></div><div class="ttdeci">Tipo valor</div><div class="ttdef"><b>Definition:</b> arreglo.h:36</div></div>
+<div class="ttc" id="funciones_8cpp_html_a4a33bfd31c20f6a2efc91e60094b872c"><div class="ttname"><a href="funciones_8cpp.html#a4a33bfd31c20f6a2efc91e60094b872c">mayor</a></div><div class="ttdeci">double mayor(double a, double b)</div><div class="ttdoc">mayor Indica el número mayor </div><div class="ttdef"><b>Definition:</b> funciones.cpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 10 de Junio de 2014 21:06:19 para Arreglo por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>
